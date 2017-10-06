@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
  * @author parsentev
  * @since 19.07.2016
  */
-@Ignore
+//@Ignore
 public class CalculatorTest {
 
     @Test
@@ -48,9 +48,9 @@ public class CalculatorTest {
     }
 
     @Test
-    public void whenExpandOneOnOneThenResultOne() throws Exception {
+    public void whenExpandThreeOnThreeThenResultTwentySeven() throws Exception {
         Calculator calc = new Calculator();
-        calc.expand(1d, 1d);
-        assertThat(calc.getResult(), is(1d));
+        calc.expand(3d, 3d);
+        assertThat(calc.getResult(), is(27d));
     }
 }
